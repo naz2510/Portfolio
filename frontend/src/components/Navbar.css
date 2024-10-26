@@ -1,0 +1,73 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #1a1a1a; /* Dark background for navbar */
+  padding: 1rem 1.5rem; /* Reduced padding to fit more items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Add some shadow for depth */
+  position: fixed; /* Fixed position to make it stick to the top */
+  top: 0; /* Stick to the top of the viewport */
+  width: 100%; /* Take up the full width */
+  z-index: 1000; /* Ensure it's above other elements */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.navbar .logo {
+  color: #00d4ff; /* Neon blue for logo text */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  
+}
+
+.nav-links {
+  width:110vh;
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Reduced gap between links */
+  margin: 0; /* Remove default margin */
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+.nav-links a {
+  color: #e0e0e0; /* Light gray text for links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+  color: #00d4ff; /* Neon blue on hover */
+}
+
+/* Add padding to the body to prevent content from being hidden under the navbar */
+body {
+  padding-top: 70px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem; /* Adjust padding on smaller screens */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Make links full width */
+    gap: 0.5rem; /* Reduce gap between links */
+  }
+
+  .nav-links li {
+    width: 100%; /* Make each link take full width */
+    text-align: center; /* Center align text */
+  }
+}
