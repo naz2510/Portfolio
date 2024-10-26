@@ -40,9 +40,13 @@
 // app.listen(PORT, () => {
 //   console.log(`Server running on port ${PORT}`);
 // });
+// 
+
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
@@ -50,7 +54,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB using the connection string from the .env file
-mongoose.connect(process.env.MONGODB_URI) // Use the MONGODB_URI from .env
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
@@ -74,6 +78,14 @@ app.get('/api/user', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
+});
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+// For any other route, serve the React index.html file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
 });
 
 // Start the server
