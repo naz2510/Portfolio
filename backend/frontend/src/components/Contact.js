@@ -26,7 +26,7 @@ const Contact = () => {
       <div className="contact-info">
         <div className="contact-method">
           <strong>Email: </strong>
-          <a href={`mailto:${contactInfo.email}`} className="contact-email">
+          <a href={`mailto:${contactInfo.email}` || "peenazshaikh2297@gmail.com"} className="contact-email">
             {loading ? 'Loading...' : contactInfo.email || 'N/A'}
           </a>
         </div>

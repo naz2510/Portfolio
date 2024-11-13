@@ -32,11 +32,11 @@ const HeroSection = () => {
           
           <div className="hero-buttons">
             {/* GitHub Button */}
-            <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="hero-button">
+            <a href={personalInfo.github || "https://github.com/naz2510"} target="_blank" rel="noopener noreferrer" className="hero-button">
               <FontAwesomeIcon icon={faGithub} className="icon-spacing" /> GitHub
             </a>
             {/* LinkedIn Button */}
-            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="hero-button">
+            <a href={personalInfo.linkedin || "https://www.linkedin.com/in/peenaz-shaikh"} target="_blank" rel="noopener noreferrer" className="hero-button">
               <FontAwesomeIcon icon={faLinkedin} className="icon-spacing" /> LinkedIn
             </a>
           </div>
