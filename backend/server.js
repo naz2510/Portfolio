@@ -42,15 +42,15 @@ app.get('/api/user', async (req, res) => {
 });
 
 // Serve static files in production
-if (process.env.NODE_ENV === 'production') {
-    // Serve frontend build folder as static files
-    app.use(express.static(path.join(__dirname, 'frontend/build')));
+// if (process.env.NODE_ENV === 'production') {
+//     // Serve frontend build folder as static files
+//     app.use(express.static(path.join(__dirname, 'frontend/build')));
 
-    // Serve the frontend app for any route not handled by the backend
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
-    });
-}
+//     // Serve the frontend app for any route not handled by the backend
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+//     });
+// }
 
 // Start the server
 const PORT = process.env.PORT || 5000;
