@@ -1,0 +1,82 @@
+/* Internships.css */
+
+#internships {
+  background: linear-gradient(135deg, #1a1a1a, #333); /* Similar background gradient to maintain consistency */
+  color: #e0e0e0;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Similar shadow as in other sections */
+  max-width: 900px;
+  transition: transform 0.3s ease; /* Lift effect on hover */
+}
+
+#internships:hover {
+  transform: translateY(-10px); /* Lift on hover for interactivity */
+}
+
+#internships h2 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00d4ff; /* Neon blue heading */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7); /* Neon glow effect */
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent card background */
+  padding: 1.5rem;
+  border-radius: 5px;
+  border-left: 5px solid #00d4ff; /* Neon blue border */
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Lighten background on hover */
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5); /* Subtle neon effect */
+}
+
+.card ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.card ul li {
+  font-size: 1rem;
+  color: #b3b3b3; /* Softer gray for list items */
+  margin-bottom: 0.5rem;
+}
+
+.card-link-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #00d4ff; /* Neon blue button */
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-link-button:hover {
+  background-color: #00aaff; /* Darker blue on hover */
+}
+@media (max-width: 875px) {
+  #internships{
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+    max-width: 150%;
+    min-width: 150%; /* Maximum width for larger screens */
+    overflow: hidden;
+    display: block; /* Ensures the container behaves as a block element */
+  }}

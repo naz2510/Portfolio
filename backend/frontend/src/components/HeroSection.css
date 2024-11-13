@@ -1,0 +1,124 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Cool gradient for a modern feel */
+  padding: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center;
+  max-width: 1200px;
+  color: #ecf0f1;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem 4rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .name-highlight {
+  color: #00d4ff;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+}
+
+.hero-content p {
+  font-size: 1.3em;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-bottom: 2rem;
+  
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background-color: #00d4ff;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 150px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: #009fb7;
+  transform: translateY(-5px);
+}
+
+.hero-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.hero-image img {
+  max-width: 400px; /* Set a maximum width for the image */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+.icon-spacing {
+  margin-right: 8px; /* Adds space between icon and text */
+}
+@media (max-width: 875px) {
+  #hero{
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+      max-width: 150%;
+      min-width: 150%;
+      height:auto
+  }
+  .hero-content {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center content */
+    padding: 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .hero-text {
+    text-align: center; /* Center text */
+    margin-bottom: 2rem; /* Add margin below text for spacing */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5em; /* Reduce font size for smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 1.1em; /* Adjust paragraph font size */
+  }
+
+  .hero-button {
+    width: auto; /* Adjust button width */
+    font-size: 1em; /* Reduce button text size */
+    padding: 0.8rem 1.5rem; /* Adjust padding */
+  }
+
+  .hero-image img {
+    max-width: 300px; /* Reduce image size */
+    margin-top: 1.5rem; /* Add space above the image */
+  }
+}

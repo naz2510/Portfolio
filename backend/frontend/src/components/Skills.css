@@ -1,0 +1,63 @@
+#skills {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #e0e0e0;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  transition: transform 0.3s ease;
+}
+
+#skills:hover {
+  transform: translateY(-10px);
+}
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  letter-spacing: 2px;
+}
+
+#skills .skill-category {
+  margin-bottom: 1rem; /* Slightly reduced margin */
+  padding: 0.5rem; /* Reduced padding */
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00d4ff;
+  border-radius: 5px;
+}
+
+.skill-logos-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+/* Reduced bottom margin */
+}
+
+.skill-item {
+  text-align: center;
+  color: #b3b3b3;
+  margin: 0; /* Reduced margin for each skill item */
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 875px) {
+  #skills {
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+    max-width: 150%;
+    min-width: 150%; /* Maximum width for larger screens */
+    overflow: hidden;
+    display: block; /* Ensures the container behaves as a block element */
+  }}

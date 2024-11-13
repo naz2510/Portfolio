@@ -1,0 +1,117 @@
+#certifications {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #e0e0e0;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  display: grid; /* Use Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns grid */
+  gap: 1.5rem; /* Space between grid items */
+}
+
+#certifications h2 {
+  font-size: 2em; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #00d4ff; /* Neon blue color */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7); /* Neon glow effect */
+  letter-spacing: 2px; /* Slightly spaced out letters for a techy feel */
+  text-align: center; /* Center align the title */
+  grid-column: span 2; /* Make the title span across both columns */
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer; /* Indicate that the card is clickable */
+  text-align: center; /* Center align text */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
+
+.card h3 {
+  font-size: 1.5em; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #e0e0e0; /* Light gray color for the certificate titles */
+  margin: 0;
+  height: 85px; /* Remove default margin */
+}
+
+.certificate-image {
+  width: 100%; /* Set image width to 100% of card */
+  max-width: 300px; /* Max width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 1rem; /* Space between title and image */
+}
+/* Modal Styles *//* Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  padding: 1rem; /* Add padding around the modal */
+  overflow: auto; /* Enable scrolling if the image is too large for the viewport */
+}
+
+.modal-content {
+  position: relative;
+  max-width: 80vw; /* Reduce modal size a bit for better visibility */
+  max-height: 80vh; /* Ensure the modal stays within viewport */
+  overflow: auto; /* Enable scroll within modal content if necessary */
+}
+
+.modal-image {
+  width: auto;
+  height: auto;
+  max-width: 100%; /* Image fits within modal */
+  max-height: 100%; /* Prevents cropping by ensuring it fits */
+  object-fit: contain; /* Ensures full image is visible without cropping */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 875px) {
+  #certifications {
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+    max-width: 150%;
+    min-width: 150%; /* Maximum width for larger screens */
+    overflow: hidden;
+    display: block; /* Ensures the container behaves as a block element */
+  }
+ .model{
+  width: 170vw;
+  height: 170%;
+ }
+    .modal-content {
+      max-width: 95vw; /* Increase width to fill more of the screen */
+      max-height: 85vh; /* Increase height for smaller screens */
+      padding: 0.5rem; /* Reduce padding */
+    }
+  
+    
+    .close {
+      font-size: 1.5rem; /* Adjust size of the close button */
+      top: 5px; /* Adjust position */
+      right: 10px; /* Adjust position */
+    }
+  }
+
+ 

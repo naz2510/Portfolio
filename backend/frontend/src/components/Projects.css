@@ -1,0 +1,179 @@
+/* Updated Projects.css
+
+#projects {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #e0e0e0;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  max-width: 900px; 
+  overflow: hidden; 
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  letter-spacing: 2px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; 
+  flex-wrap: nowrap; 
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00d4ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: calc(33.333% - 1rem); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card h3 {
+  color: #00d4ff;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+}
+
+.project-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.project-card ul li {
+  color: #b3b3b3;
+  margin-bottom: 0.5rem;
+}
+
+.project-link-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00d4ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-link-button:hover {
+  background-color: #00a0cc;
+} */
+/* Main container styling */
+/* Main container styling */
+#projects {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #e0e0e0;
+  margin: 2rem auto; /* Center the container horizontally */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  max-width: 900px; /* Maximum width for larger screens */
+  overflow: hidden;
+  display: block; /* Ensures the container behaves as a block element */
+}
+
+/* Heading styling */
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  letter-spacing: 2px;
+}
+
+/* Project container styling */
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+/* Individual project card styling */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #00d4ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: calc(33.333% - 1rem); /* Three cards in a row */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Card title styling */
+.project-card h3 {
+  color: #00d4ff;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+}
+
+/* Project description list styling */
+.project-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.project-card ul li {
+  color: #b3b3b3;
+  margin-bottom: 0.5rem;
+}
+
+/* Link button styling */
+.project-link-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00d4ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for project link */
+.project-link-button:hover {
+  background-color: #00a0cc;
+}
+
+/* Responsive adjustments for screens smaller than 875px */
+@media (max-width: 875px) {
+  #projects {
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+    max-width: 150%;
+    min-width: 150%; /* Maximum width for larger screens */
+    overflow: hidden;
+    display: block; /* Ensures the container behaves as a block element */
+  }
+
+  .project-container {
+    flex-direction: column; /* Stack the project cards vertically */
+    align-items: center; /* Center the cards horizontally */
+  }
+
+  .project-card {
+    width: 100%; /* Each card takes the full width of the container */
+    margin-bottom: 1rem; /* Adds space between stacked cards */
+  }
+}

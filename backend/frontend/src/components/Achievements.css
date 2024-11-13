@@ -1,0 +1,68 @@
+/* Updated Leadership.css */
+
+#leadership {
+  background: linear-gradient(135deg, #1a1a1a, #333); /* Same gradient background for consistency */
+  color: #e0e0e0; /* Light gray text for contrast */
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px; /* Rounded corners like the Education section */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+  max-width: 900px; /* Limit the width for a neat appearance */
+  transition: transform 0.3s ease; /* Add smooth transformation on hover */
+}
+
+#leadership:hover {
+  transform: translateY(-10px); /* Lift the section on hover */
+}
+
+#leadership h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8em; /* Same heading size as Education */
+  font-weight: bold;
+  color: #00d4ff; /* Neon blue for the heading */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7); /* Neon glow */
+  letter-spacing: 2px; /* Slightly spaced out letters */
+}
+
+#leadership .card {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent background for each item */
+  border-left: 5px solid #00d4ff; /* Neon blue border to the left */
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+#leadership .card:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight color change on hover */
+}
+
+#leadership .card h3 {
+  font-size: 1.2em;
+  color: #fff; /* Pure white for strong contrast */
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.5); /* Subtle neon blue glow */
+}
+
+#leadership .card ul {
+  list-style: none;
+  padding: 0;
+}
+
+#leadership .card li {
+  margin-bottom: 1rem;
+  color: #b3b3b3; /* Softer gray for the text */
+}
+
+#leadership .card li strong {
+  color: #00d4ff; /* Highlight important details with neon blue */
+}
+@media (max-width: 875px) {
+  #leadership {
+    margin: 2rem 1rem 2rem 2%; /* Center the container horizontally */
+    max-width: 150%;
+    min-width: 150%; /* Maximum width for larger screens */
+    overflow: hidden;
+    display: block; /* Ensures the container behaves as a block element */
+  }}

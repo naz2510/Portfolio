@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column; /* Ensures the components are stacked vertically */
+  align-items: center; /* Centers the content horizontally */
+  margin: 0 auto; /* Centers the main block itself */
+  width: 100%; /* Ensures the main takes up the available width */
+  max-width: 1200px; /* Optionally limit the width for better layout */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
